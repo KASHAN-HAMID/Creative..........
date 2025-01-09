@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the scrollbar */
+/* Style the scrollbar */
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; /* Black background */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000; /* Black thumb */
+  border-radius: 10px;
+  border: 2px solid #3b82f6; /* Thin blue outline */
+  box-shadow: 0 0 5px #3b82f6; /* Soft blue glow effect */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border: 2px solid #1e40af; /* Slightly darker blue on hover */
+  box-shadow: 0 0 8px #1e40af; /* Stronger blue glow on hover */
+}
+
+/* Optional: Style the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background: #000; /* Match the track */
+}
+
